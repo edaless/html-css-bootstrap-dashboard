@@ -1,0 +1,97 @@
+
+:root{
+    /* var(--h-header) */
+    --h-header: 150px;
+    /* var(--w-barra-l) */
+    --w-barra-l: 100px;
+    /* var(--color-main) */
+    --color-main: #f8f9fa;
+    /* var(--h-main) */
+    --h-main: calc(100vh - var(--h-header));
+    
+    
+}
+
+main{
+
+    margin-top: var(--h-header);
+    height: var(--h-main);
+
+    margin-left: var(--w-barra-l);
+    width: calc(100vw - var(--w-barra-l));
+    
+    overflow: scroll;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: var(--color-main);
+
+
+
+
+    /* debug */
+    /* background-color: rgb(168, 55, 81); */
+
+}
+
+
+
+
+
+
+
+.ms-card{
+    margin-top: 10px;
+    width: 95%;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+
+
+
+.ms-titolo-card{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-bottom: 1px solid grey;
+    
+    /* debug */
+    height: 50px;
+    /* background-color: rgb(11, 184, 121); */
+    /* border: 2px solid black; */
+}
+
+ul{
+    padding: 0 10px;
+    /* margin-bottom: 0; */
+    background-color: white;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-bottom: 1px solid grey;
+    height: 50px;
+}
+
+li:last-child{
+    border: 0PX;
+}
+
+
+
+
+
+
+/* responsive 
+****************************************************** */
+
+@media screen and (min-width: 768px){
+    main>*{
+        height: var(--h-main);
+        overflow: scroll;
+    }
+ }
+
