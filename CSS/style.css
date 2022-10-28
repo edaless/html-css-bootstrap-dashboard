@@ -63,6 +63,10 @@ main{
 #ms-riga-2-main{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    
 
     /* debug */
     background-color: rgb(0, 255, 247);
@@ -70,7 +74,9 @@ main{
     
 }
 
-
+#ms-riga-2-main{
+    overflow-y: scroll;
+}
 
 
 
@@ -81,7 +87,7 @@ main{
 
 }
 .ms-col-1-main{
-    height: 100%;
+    
     width: var(--w-col-1-main);
     /* debug */
     background-color: rgb(255, 255, 0);
@@ -100,8 +106,9 @@ main{
     --w-col-2-main: 100%; 
 }
 .ms-col-2-main{
-    height: 100%;
+    
     width: var(--w-col-2-main);
+    
     /* width: 100%; */
     /* debug */
     background-color: rgb(255, 0, 225);
@@ -137,6 +144,12 @@ main{
         
 
 
+    }
+
+    
+
+    #ms-riga-2-main{
+        flex-direction: row;
     }
 
     /* main>*{
