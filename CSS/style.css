@@ -29,7 +29,7 @@ main{
 
 :root{
     /* var(--w-sinistra) */
-    --w-sinistra: 100px; 
+    --w-sinistra: 50px; 
 }
 #sinistra{
     height: 100%;
@@ -94,8 +94,14 @@ main{
     /* background-color: white; */
 }
 
+
+
+:root{
+    /* var(--color-grigio) */
+    --color-grigio: rgb(159, 159, 159); 
+}
 .ms-card-top{
-    border: 1px solid grey;
+    border: 1px solid var(--color-grigio);
     border-radius: 10px 10px 0px 0px;
     height: 50px;
     
@@ -109,7 +115,7 @@ main{
 
 .ms-card-bottom{
     /* height: 150px; */
-    border: 1px solid grey;
+    border: 1px solid var(--color-grigio);
     border-radius: 0 0 10px 10px;
     background-color: white;
 
@@ -123,18 +129,14 @@ li{
     list-style: none;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid grey;
-    height: 40px;
+    border-bottom: 1px solid var(--color-grigio);
+    min-height: 40px;
 }
 
 
-.ms-card li:first-child{
-    
-    font-weight: 600;
-    
-}
 
-.ms-card li:last-child{
+
+.ms-colonna1 .ms-card li:last-child{
     
     border: 0;
 }
@@ -157,10 +159,29 @@ li{
     align-items: center;
     /* overflow-x: hidden; */
 
-    background-color: aqua;
-    border: 1px solid red;
+    /* background-color: aqua; */
+    /* border: 1px solid red; */
     
 }
+
+.ms-colonna2 ul{
+    width: 95%;
+    margin: 10px 0;
+}
+.ms-colonna2 li{
+    padding: 0 10px;
+    border: 1px solid var(--color-grigio);
+    overflow-x: hidden;
+}
+.ms-colonna2 li:first-child{
+    border-radius: 5px 5px 0 0;
+}
+.ms-colonna2 li:last-child{
+    border-radius: 0 0 5px 5px;
+}
+
+
+
 
 /* responsive 
 ****************************************************** */
@@ -184,7 +205,14 @@ li{
 }
 
 
- @media screen and (min-width: 992px){    
+ @media screen and (min-width: 992px){   
+        
+    :root{
+        /* var(--w-sinistra) */
+        --w-sinistra: 100px; 
+    }
+
+
     .ms-h-riga2>*{
         height: var(--h-riga2);
         overflow-y: scroll;
