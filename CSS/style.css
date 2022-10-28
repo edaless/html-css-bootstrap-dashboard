@@ -15,136 +15,36 @@ header{
 }
 
 
-:root{
-    /* var(--h-col-lat) */
-    --h-col-lat: calc(100vh - var(--h-header)); 
-    /* var(--w-col-lat) */
-    --w-col-lat: 50px; 
+#uno{
+    height: calc(100vh - var(--h-header));
+    
+
+    background-color: darkgoldenrod;
 }
-.ms-col-lat{
-    height: var(--h-col-lat);
-    width: var(--w-col-lat);
-
-    /* debug */
-    background-color: rgb(0, 72, 255);
-
-}
-
 
 :root{
-    /* var(--h-main) */
-    --h-main: calc(100vh - var(--h-header)); 
-    /* var(--w-main) */
-    --w-main: calc(100% - var(--w-col-lat)); 
+    /* var(--w-sinistra) */
+    --w-sinistra: 100px; 
 }
-main{
-    height: var(--h-main);
-    width: var(--w-main);
-    display: flex;
-    flex-direction: column;
-    
+#sinistra{
+    height: 100%;
+    width: var(--w-sinistra);
 
-    /* debug */
-    background-color: rgb(255, 0, 21);
-
-}
-
-
-#ms-riga-1-main{
-    display: flex;
-    flex-wrap: wrap;
-
-    /* debug */
-    background-color: rgb(0, 255, 64);
-    
-}
-
-#ms-riga-1-main *{
-    height: 100px;
-
-}
-
-
-#ms-riga-2-main{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    
-    
-
-    /* debug */
-    background-color: rgb(0, 255, 247);
-    /* height: 100%; */
-    
-}
-
-/* #ms-riga-2-main{
-    overflow-y: scroll;
-} */
-#ms-riga-2-main .ms-col-2-main{
-    height: 100px;
-}
-
-
-:root{
-    
-    /* var(--w-col-1-main) */
-    --w-col-1-main: 100%; 
-
-}
-.ms-col-1-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    width: var(--w-col-1-main);
-    /* debug */
-    background-color: rgb(255, 255, 0);
-    border: 1px solid white;
-    /* height: 100px; */
-    
+    background-color: rgb(11, 184, 135);
 }
 
 
 
 
+#destra{
+    height: 100%;
+    width: calc(100% - var(--w-sinistra));
 
-:root{
-    
-    /* var(--w-col-2-main) */
-    --w-col-2-main: 100%; 
-}
-.ms-col-2-main{
-    display: flex;
-    justify-content: center;
-    
-    width: var(--w-col-2-main);
-    
-    /* width: 100%; */
-    /* debug */
-    background-color: rgb(255, 0, 225);
-    border: 1px solid white;
-    /* height: 100px; */
-    
+    background-color: rgb(40, 101, 86);
 }
 
-.ms-card{
-    width: 95%;
-    border-radius: 10px;
-
-    margin-top: 10px;
 
 
-
-
-    /* debug */
-    height: 100px;
-    
-    background-color: rgb(64, 95, 173);
-    border: 1px solid white;
-
-}
 
 
 
@@ -153,49 +53,11 @@ main{
 ****************************************************** */
 
 
- @media screen and (min-width: 768px){
-
+ @media screen and (min-width: 768px){    
     
-    :root{
-        /* var(--h-col-lat) */
-        --h-col-lat: calc(100vh - var(--h-header)); 
-        /* var(--w-col-lat) */
-        --w-col-lat: 100px; 
-
-        
-        /* var(--w-col-1-main) */
-        --w-col-1-main: 65%; 
-        /* var(--w-col-2-main) */
-        --w-col-2-main: calc( 100% - var(--w-col-1-main)); 
-
-        
-
-
-    }
 
     
 
-    #ms-riga-2-main{
-        display: flex;
-        flex-direction: row;
-        
-        
-        
-        
-    }
     
-    #ms-riga-2-main .ms-col-1-main {
-        /* height: 1000px; */
-        overflow: scroll;
-    }
-    /* #ms-riga-2-main .ms-col-2-main {
-        height: 100px;
-    } */
-    
-
-    /* main>*{
-        max-height: var(--h-main);
-        overflow: scroll;
-    } */
  }
 
