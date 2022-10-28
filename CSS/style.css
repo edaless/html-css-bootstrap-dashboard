@@ -47,10 +47,10 @@ main{
     height: 100%;
     width: calc(100% - var(--w-sinistra));
 
-    background-color: rgb(40, 101, 86);
+    background-color: #f8f9fa;
 }
 
-#ms-blu-top{
+.ms-blu-top{
     
 
     background-color: #1b72e8;
@@ -78,27 +78,7 @@ main{
 
 }
 
-.row{
-    /* width: 100%; */
-    background-color: rgb(242, 255, 0);
-}
 
-.col-lg-9{
-    
-    /* debug */
-    border: 1px solid white;
-    background-color: darkgreen;
-}
-
-.col-lg-3{
-    /* width: 100px; */
-    /* flex-grow: 1; */
-
-
-
-    background-color: fuchsia;
-    border: 1px solid white;
-}
 
 
 .ms-scroll{
@@ -107,14 +87,101 @@ main{
 }
 
 .ms-card{
-    margin: 10px;
-    height: 50px;
-    width: 50px;
+    margin: 10px 0;
+    /* height: 150px; */
+    width: 95%;
 
-    background-color: white;
+    /* background-color: white; */
 }
+
+.ms-card-top{
+    border: 1px solid grey;
+    border-radius: 10px 10px 0px 0px;
+    height: 50px;
+    
+
+}
+.ms-card-top h4{
+    margin-left: 10px;
+    
+
+}
+
+.ms-card-bottom{
+    /* height: 150px; */
+    border: 1px solid grey;
+    border-radius: 0 0 10px 10px;
+    background-color: white;
+
+}
+
+.ms-card ul{
+    padding: 0 10px;
+}
+
+li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    height: 40px;
+}
+
+
+.ms-card li:first-child{
+    
+    font-weight: 600;
+    
+}
+
+.ms-card li:last-child{
+    
+    border: 0;
+}
+
+
+.ms-dettagli{
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    overflow-x: hidden;
+    
+    
+}
+
+.ms-dettaglio{
+    width: 100px;
+    /* margin-left: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow-x: hidden; */
+
+    background-color: aqua;
+    border: 1px solid red;
+    
+}
+
 /* responsive 
 ****************************************************** */
+
+
+
+
+@media screen and (max-width: 674px){    
+    .ms-disappear1{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-width: 838px){    
+    .ms-disappear2{
+        display: none;
+    }
+    
+}
 
 
  @media screen and (min-width: 992px){    
