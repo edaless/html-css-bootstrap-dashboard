@@ -7,16 +7,21 @@
 header{
     width: 100%;
     height: var(--h-header);
+    
+    background-color: #f8f9fa;
 
 
 
     /* debug */
-    background-color: rgb(179, 255, 0);
 }
 
 
-#uno{
-    height: calc(100vh - var(--h-header));
+:root{
+    /* var(--h-main) */
+    --h-main: calc(100vh - var(--h-header)); 
+}
+main{
+    height: var(--h-main);
     
 
     background-color: darkgoldenrod;
@@ -30,31 +35,93 @@ header{
     height: 100%;
     width: var(--w-sinistra);
 
-    background-color: rgb(11, 184, 135);
+    background-color: #051e34;
 }
 
 
 
 
 #destra{
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: calc(100% - var(--w-sinistra));
 
     background-color: rgb(40, 101, 86);
 }
 
+#ms-blu-top{
+    
+
+    background-color: #1b72e8;
+
+    /* debug */
+}
+
+
+:root{
+    /* var(--h-riga1) */
+    --h-riga1: 100px; 
+}
+.ms-h-riga1{
+    height: var(--h-riga1);
+
+}
+
+
+:root{
+    /* var(--h-riga2) */
+    --h-riga2: calc(var(--h-main) - var(--h-riga1)); 
+}
+.ms-h-riga2{
+    height: var(--h-riga2);
+
+}
+
+.row{
+    /* width: 100%; */
+    background-color: rgb(242, 255, 0);
+}
+
+.col-lg-9{
+    
+    /* debug */
+    border: 1px solid white;
+    background-color: darkgreen;
+}
+
+.col-lg-3{
+    /* width: 100px; */
+    /* flex-grow: 1; */
 
 
 
+    background-color: fuchsia;
+    border: 1px solid white;
+}
 
 
+.ms-scroll{
+    overflow-y: scroll;
 
+}
+
+.ms-card{
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+
+    background-color: white;
+}
 /* responsive 
 ****************************************************** */
 
 
- @media screen and (min-width: 768px){    
-    
+ @media screen and (min-width: 992px){    
+    .ms-h-riga2>*{
+        height: var(--h-riga2);
+        overflow-y: scroll;
+    }
 
     
 
