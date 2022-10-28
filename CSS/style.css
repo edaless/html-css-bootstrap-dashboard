@@ -1,45 +1,114 @@
 
 :root{
     /* var(--h-header) */
-    --h-header: 150px;
-    /* var(--w-barra-l) */
-    --w-barra-l: 100px;
-    /* var(--color-main) */
-    --color-main: #f8f9fa;
-    /* var(--h-main) */
-    --h-main: calc(100vh - var(--h-header));
-    
-    
+    --h-header: 50px; 
 }
 
 header{
     width: 100%;
-}
-
-main{
-
-    margin-top: var(--h-header);
-    height: var(--h-main);
-
-    margin-left: var(--w-barra-l);
-    width: calc(100vw - var(--w-barra-l));
-    
-    overflow: scroll;
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    background-color: var(--color-main);
-
+    height: var(--h-header);
 
 
 
     /* debug */
-    /* background-color: rgb(168, 55, 81); */
+    background-color: rgb(179, 255, 0);
+}
+
+
+:root{
+    /* var(--h-col-lat) */
+    --h-col-lat: calc(100vh - var(--h-header)); 
+    /* var(--w-col-lat) */
+    --w-col-lat: 50px; 
+}
+.ms-col-lat{
+    height: var(--h-col-lat);
+    width: var(--w-col-lat);
+
+    /* debug */
+    background-color: rgb(0, 72, 255);
 
 }
 
+
+:root{
+    /* var(--h-main) */
+    --h-main: calc(100vh - var(--h-header)); 
+    /* var(--w-main) */
+    --w-main: calc(100% - var(--w-col-lat)); 
+}
+main{
+    height: var(--h-main);
+    width: var(--w-main);
+    display: flex;
+    flex-direction: column;
+    
+
+    /* debug */
+    background-color: rgb(255, 0, 21);
+
+}
+
+
+#ms-riga-1-main{
+    display: flex;
+    flex-wrap: wrap;
+
+    /* debug */
+    background-color: rgb(0, 255, 64);
+    
+}
+
+
+#ms-riga-2-main{
+    display: flex;
+    flex-wrap: wrap;
+
+    /* debug */
+    background-color: rgb(0, 255, 247);
+    height: 100%;
+    
+}
+
+
+
+
+
+:root{
+    
+    /* var(--w-col-1-main) */
+    --w-col-1-main: 100%; 
+
+}
+.ms-col-1-main{
+    height: 100%;
+    width: var(--w-col-1-main);
+    /* debug */
+    background-color: rgb(255, 255, 0);
+    border: 1px solid white;
+    height: 100px;
+    
+}
+
+
+
+
+
+:root{
+    
+    /* var(--w-col-2-main) */
+    --w-col-2-main: 100%; 
+}
+.ms-col-2-main{
+    height: 100%;
+    width: var(--w-col-2-main);
+    /* width: 100%; */
+    /* debug */
+    background-color: rgb(255, 0, 225);
+    border: 1px solid white;
+    height: 100px;
+    
+}
 
 
 
@@ -51,9 +120,28 @@ main{
 
 
  @media screen and (min-width: 768px){
-    main>*{
+
+    
+    :root{
+        /* var(--h-col-lat) */
+        --h-col-lat: calc(100vh - var(--h-header)); 
+        /* var(--w-col-lat) */
+        --w-col-lat: 100px; 
+
+        
+        /* var(--w-col-1-main) */
+        --w-col-1-main: 65%; 
+        /* var(--w-col-2-main) */
+        --w-col-2-main: calc( 100% - var(--w-col-1-main)); 
+
+        
+
+
+    }
+
+    /* main>*{
         max-height: var(--h-main);
         overflow: scroll;
-    }
+    } */
  }
 
