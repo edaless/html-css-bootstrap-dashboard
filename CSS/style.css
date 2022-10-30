@@ -88,10 +88,10 @@ main{
 
 .ms-card{
     margin: 10px 0;
-    /* height: 150px; */
     width: 95%;
+    
 
-    /* background-color: white; */
+    
 }
 
 
@@ -113,10 +113,17 @@ main{
 
 }
 
+
+
 .ms-card-bottom{
-    /* height: 150px; */
     border: 1px solid var(--color-grigio);
     border-radius: 0 0 10px 10px;
+    background-color: white;
+
+}
+.ms-card-full{
+    border: 1px solid var(--color-grigio);
+    border-radius: 10px;
     background-color: white;
 
 }
@@ -169,6 +176,8 @@ li{
     margin: 10px 0;
 }
 .ms-colonna2 li{
+    font-size: 0.8em;
+    font-weight: 600;
     padding: 0 10px;
     border: 1px solid var(--color-grigio);
     overflow-x: hidden;
@@ -178,6 +187,16 @@ li{
 }
 .ms-colonna2 li:last-child{
     border-radius: 0 0 5px 5px;
+}
+
+
+h3, h4, h5{
+    font-weight: 550;
+}
+
+#img-grafico{
+    width: 100%;
+    height: auto;
 }
 
 
