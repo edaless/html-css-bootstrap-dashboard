@@ -1,19 +1,110 @@
 
-:root{
-    /* var(--h-header) */
-    --h-header: 50px; 
+.big{
+    display: none;
 }
 
+
+.tasto{
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+
+
+
+:root{
+    /* var(--h-header) */
+    --h-header: 70px; 
+}
 header{
     width: 100%;
     height: var(--h-header);
     
     background-color: #f8f9fa;
-
-
-
-    /* debug */
+    
+    display: flex;
+    align-items: center;
+    
 }
+header .row{
+    
+    
+    padding: 0;
+    width: 100%;
+    
+
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+    
+}
+.ms-logo{
+     
+    padding: 0;
+    width: var(--w-sinistra);
+    display: flex;
+    justify-content: center;
+}
+
+
+.ms-img-logo{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+#ms-search{
+    width: 100%;
+    /* height: calc(); */
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.116);
+}
+
+
+
+header .tasto{
+    
+    width: 30px;
+    color: rgb(91, 91, 91);
+    
+
+    display: flex;
+    justify-content: center;
+}
+
+
+header .tasto i{
+    margin: 0;
+    
+}
+
+
+
+.campana{
+    color: orange;
+}
+
+.cerchio{
+    width: 20px;
+    height: 20px;
+    background-color: crimson;
+}
+
+
+
+
+
+
+
+
 
 
 :root{
@@ -29,7 +120,7 @@ main{
 
 :root{
     /* var(--w-sinistra) */
-    --w-sinistra: 50px; 
+    --w-sinistra: 70px; 
 }
 #sinistra{
     height: 100%;
@@ -39,28 +130,9 @@ main{
     background-color: #051e34;
 }
 
-#sinistra .row{
-    
-    /* width: 100%; */
-    /* background-color: darkmagenta; */
-}
-
-.tasto{
-    
-    /* width: 100%; */
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    
-    /* width: 30px; */
-    /* background-color: darkgoldenrod; */
-
-}
 
 #sinistra .tasto{
-    
+    height: 30px;
     color: white;
 }
 #sinistra .tasto:hover{
@@ -78,9 +150,6 @@ main{
 }
 
 
-.big{
-    display: none;
-}
 #sinistra .big{
     margin-left: 10px;
     font-size: 12px;
@@ -149,6 +218,8 @@ main{
     border: 1px solid var(--color-grigio);
     border-radius: 10px 10px 0px 0px;
     height: 50px;
+    
+    border-bottom: 0;
     
 
 }
@@ -272,9 +343,14 @@ h3, h4, h5{
         
     :root{
         /* var(--w-sinistra) */
-        --w-sinistra: 100px; 
+        --w-sinistra: 130px; 
     }
 
+    
+    .small{
+        display: none;
+        
+    }
     
     .big{
         display: flex;
@@ -291,6 +367,13 @@ h3, h4, h5{
     }
 
     
+    .ms-img-logo{
+        height: 100%;
+        
+        width: 100%;
+        object-fit: contain;
+    }
+
 
     
  }
