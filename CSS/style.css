@@ -96,7 +96,7 @@ header .row{
 
 header .tasto{
     
-    width: 30px;
+    width: 40px;
     height: 30px;
     color: #5b5858;
     
@@ -108,20 +108,20 @@ header .tasto{
     /* background-color: darkgreen; */
 }
 
-.ms-90px{
+.ms-120px{
     
-    width: 90px;
+    width: 120px;
     padding: 0;
+    margin-left: 10px;
     
 }
 
 
 
 
-.campana{
+.campana i{
     color: orange;
-    margin-right: 10px;
-    /* background-color: crimson; */
+    
 }
 
 .cerchio{
@@ -211,7 +211,9 @@ main{
 
     background-color: #f8f9fa;
 }
-
+#destra>.row{
+    width: 100%;
+}
 .ms-blu-top{
     
     width: 100%;
