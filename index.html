@@ -14,41 +14,48 @@
 
     <header class="d-flex align-items-center">
 
-        <div class="row m-0 p-0 d-flex">
+        <div class="row m-0 p-0 d-flex green">
             <!-- loghi -->
-            <div class="ms-logo small">
-                <img src="img/logo.png" class="ms-img-logo" alt="">
-            </div>
-            <div class="ms-logo big">
-                <img src="img/logo-big.png" class="ms-img-logo" alt="">
+            <div class="ms-logo">
+                <img src="img/logo.png" class="ms-img-logo small" alt="">
+                
+                <img src="img/logo-big.png" class="ms-img-logo big" alt="">
             </div>
 
             <!-- search -->
-            <div class="col">
-                <input type="text" id="ms-search" placeholder="Prova a cercare: Lezioni di Laravel">
+            <div class="col ms-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="ms-input" placeholder="Prova a cercare: Lezioni di Laravel">
             </div>
+            <!-- funziona ma non è un granché -->
 
             <!-- tasti -->
-            <div class="tasto big">
-                <i class="fa-solid fa-list-ul"></i>
-                
-            </div>
-            <div class="tasto big">
-                <div class="cerchio">
+            <div class="ms-90px big">
+                <div class="tasto">
+                    
+                    <i class="fa-solid fa-list-ul"></i>
 
                 </div>
 
-                <!-- <i class="fa-solid fa-question"></i> -->
-                
-            </div>
-            <div class="tasto big">
-                <i class="fa-solid fa-list-ul"></i>
-                
-            </div>
-            <div class="tasto campana">
-                <i class="fa-solid fa-bell"></i>
+                <div class="tasto">
+                    <div class="cerchio">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                </div>
+
+                <div class="tasto">
+                    
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                </div>     
             </div>
 
+            <div class="tasto">
+                    
+                <i class="fa-solid fa-bell campana"></i>
+
+            </div>
+            
 
 
         </div>
@@ -59,7 +66,7 @@
     <main class="container-fluid p-0 d-flex">
         
         <div id="sinistra" class=" d-flex flex-column justify-content-between">
-            <div class="row d-flex flex-column m-0 align-items-start">
+            <div class="row d-flex flex-column m-0 align-items-center">
 
                 <div class="tasto">
                     <i class="fa-solid fa-house"></i>
@@ -82,7 +89,7 @@
 
 
             </div>
-            <div class="row d-flex flex-column m-0 align-items-start">
+            <div class="row d-flex flex-column m-0 align-items-center">
 
                 <div class="tasto">
                     <i class="fa-solid fa-gear"></i>
@@ -102,15 +109,47 @@
 
 
         <div id="destra">
+            <!-- riga blu -->
             <div class="row m-0 d-flex flex-wrap ms-blu-top">
-                <div class="col-12 col-lg-9  ms-h-riga1">
+                
+
+                
+                <div class="col-12 col-lg-9 ms-h-riga1 d-flex">
+                    <div class="row path d-flex flex-column justify-content-evenly">
+                        
+                       
+                        
+                        <div class="d-flex m-0  d-flex align-items-end">                            
+                            <div class="col-2 m-0 p-0">
+                                <h3>Boolean</h3>
+                            </div>
+                            
+                            <span class="col-2 path">Piano blaze</span>
+                        </div>
+                        
+                        <div class="d-flex align-items-center m-0">                            
+                            <span class="col-2 path">Piano blaze</span>
+                            <h5 class="path">>></h5>
+                            <span class="col-2 path">Piano blaze</span>
+                            <span class="col-2 path">Piano blaze</span>
+                        </div>
+                        
+
+                    </div>
+
                 </div>
 
                 
-                <div class="col-12 col-lg-3  ms-h-riga1">
+                <div class="col-12 col-lg-3  ms-h-riga1 d-flex flex-column justify-content-center">
+                    <p>Studenti online negli ultimi 30 minuti</p>
+                    <h3>125</h3>
                 </div>
 
             </div>
+
+
+
+            <!-- prima colonna di card -->
             <div class="row m-0 d-flex flex-wrap ms-h-riga2 ms-scroll">
                 <div class="col-12 col-lg-9  p-0 d-flex flex-column align-items-center ms-colonna1">
                     <div class="ms-card">
