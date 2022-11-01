@@ -281,10 +281,17 @@ span.path{
     background-color: rgba(0, 0, 0, 0.45);
 }
 
-/* .row.path{
-    width: 100%;
+
+
+
+span.path:hover{
     
-} */
+    background-color: rgba(0, 0, 0, 0.676);
+}
+
+
+
+
 
 :root{
     /* var(--h-riga1) */
@@ -561,6 +568,7 @@ h5.path{
 @media screen and (min-width: 460px){    
     .ms-disappear0{
         display: flex;
+        align-items: center;
     }
     
 }
