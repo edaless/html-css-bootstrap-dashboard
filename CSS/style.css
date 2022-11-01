@@ -349,11 +349,12 @@ li{
 li:hover{
     background-color: rgb(237, 237, 237);
 }
-.titoli:hover{
-    background-color: rgb(255, 255, 255);
+
+
+.ms-prox-class li:first-child:hover{
+    background-color: white;
 }
-/* sì lo so, è una barbarie questa soluzione, 
-ma ci sto lavorando */
+
 
 
 .ms-colonna1 .ms-card li:last-child{
