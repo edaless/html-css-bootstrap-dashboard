@@ -3,17 +3,6 @@
     padding:0;
     box-sizing: border-box;
 }
-/* 
-.tasto{
-    
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-
-} */
-
 
 
 .big{
@@ -116,14 +105,6 @@ header .tasto{
     
 }
 
-
-
-
-.campana i{
-    color: orange;
-    
-}
-
 .cerchio{
     width: 17px;
     height: 17px;
@@ -136,10 +117,71 @@ header .tasto{
     font-size: 10px;
     padding: 0;
 }
-.cerchio i{
-    margin: 0;
+
+
+.campana i{
+    color: orange;  
+}
+.campana {    
+    position: relative;    
 }
 
+.campana:hover .ms-menu-campana{
+    display: block;
+}
+
+
+.ms-menu-campana{
+    
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    padding: 0;
+    height: 90px;
+    width: 120px;
+    
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid rgb(208, 208, 208);
+} 
+
+
+
+
+.ms-menu-campana ul{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+
+    
+    
+}
+
+.ms-menu-campana li{
+    height: calc(100% / 3);
+    /* height: 5px; */
+    width: 100%;
+    padding:0 10px;
+    border: 0;
+    color: black;
+    
+    
+}
+
+
+
+
+
+:root{
+    /* var(--grigio-hover) */
+    --grigio-hover: rgb(237, 237, 237);
+}
+.ms-menu-campana li:hover{
+    background-color: var(--grigio-hover);
+    
+    
+}
 
 
 
@@ -342,12 +384,14 @@ li{
     list-style: none;
     display: flex;
     align-items: center;
+}
+main li{    
     border-bottom: 1px solid var(--color-grigio);
     min-height: 40px;
 }
 
-li:hover{
-    background-color: rgb(237, 237, 237);
+.ms-prox-class li:hover{
+    background-color: var(--grigio-hover);
 }
 
 
@@ -357,14 +401,14 @@ li:hover{
 
 
 
-.ms-colonna1 .ms-card li:last-child{
+.ms-card li:last-child{
     
     border: 0;
 }
 
-
+/*  */
 .ms-dettagli{
-    width: 500px;
+    width: 400px;
     display: flex;
     justify-content: flex-end;
     /* overflow-x: hidden; */
@@ -423,7 +467,7 @@ li:hover{
     height: 25px;
     width: 25px;
     border-radius: 5px;
-    border: 2px solid grey;
+    border: 1px solid grey;
     color: grey;
     display: flex;
     justify-content: center;
@@ -442,12 +486,39 @@ li:hover{
     
 }
 
+.ms-faq .row{
+    margin: 0;
+    height: 40px;
+    width: 100%;
+}
 
-
+.ms-estensione{
+    display: none;
+}
+.ms-domanda:hover .ms-estensione{
+    display: flex;
+}
+.ms-domanda:hover .ms-princ{
+    color: #0d6efd;
+    background-color: #1babe821;
+    border: 3px solid rgba(0, 140, 255, 0.256);
+}
+.ms-domanda:hover .ms-arr-down{
+    display: none;
+}
+.ms-arr-up{
+    display: none;
+}
+.ms-domanda:hover .ms-arr-up{
+    display: block;
+}
 
 
 
 .ms-colonna2 ul{
+    border: 1px solid var(--color-grigio);
+    border-radius: 5px;
+    padding: 0;
     width: 95%;
     margin: 10px 0;
 }
@@ -455,14 +526,8 @@ li:hover{
     font-size: 0.8em;
     font-weight: 600;
     padding: 0 10px;
-    border: 1px solid var(--color-grigio);
-    overflow-x: hidden;
-}
-.ms-colonna2 li:first-child{
-    border-radius: 5px 5px 0 0;
-}
-.ms-colonna2 li:last-child{
-    border-radius: 0 0 5px 5px;
+    border-bottom: 1px solid var(--color-grigio);
+    
 }
 
 
