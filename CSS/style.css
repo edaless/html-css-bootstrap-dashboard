@@ -224,15 +224,7 @@ main{
 }
 
 
-/* .ms-blu-top p, .ms-blu-top h3{    
-    margin: 0;
-    
-    
-} */
 
-/* .row.path{
-    height: 30px;
-} */
 span.path{
     /* width: 80px; */
     height: 15px;
@@ -306,6 +298,25 @@ span.path{
 
 }
 
+.ms-card-top .tasto{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 30px;
+    border:1px solid #0d6efd;
+    color: #0d6efd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ms-card-top .tasto:hover{
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 50%;
+
+}
+
 
 
 .ms-card-bottom{
@@ -346,23 +357,85 @@ li{
     width: 500px;
     display: flex;
     justify-content: flex-end;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     
     
 }
 
 .ms-dettaglio{
-    width: 100px;
+    width: 90px;
     /* margin-left: 50px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow-x: hidden; */
-
-    /* background-color: aqua; */
-    /* border: 1px solid red; */
     
 }
+.logo-classe{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #f16451;
+}
+
+
+
+.ms-stato{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 5px;
+    line-height: 15px;
+    
+}
+
+.green{    
+    background-color: #198754;
+}
+
+.yellow{    
+    background-color: #ffc107;
+}
+
+.red{    
+    background-color: #dc3545;
+}
+
+.ms-azioni .tasto{
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin: 0 2px;
+    
+}
+
+
+.ms-azioni .tasto:hover{
+    
+    background-color: grey;
+    color: white;
+    
+    
+}
+
+
+
+
+
 
 .ms-colonna2 ul{
     width: 95%;
