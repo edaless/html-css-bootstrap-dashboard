@@ -229,6 +229,8 @@ span.path{
     /* width: 80px; */
     height: 15px;
     font-size: 10px;
+    padding: 2px 8px;
+    margin-left: 7px;
     
     border-radius: 30px;
     display: flex;
@@ -237,10 +239,10 @@ span.path{
     background-color: rgba(0, 0, 0, 0.45);
 }
 
-.row.path{
+/* .row.path{
     width: 100%;
-    /* background-color: #e81be1; */
-}
+    
+} */
 
 :root{
     /* var(--h-riga1) */
@@ -254,7 +256,7 @@ span.path{
 
 :root{
     /* var(--h-riga2) */
-    --h-riga2: calc(var(--h-main) - var(--h-riga1)); 
+    --h-riga2: calc(var(--h-main) - 2 * var(--h-riga1)); 
 }
 .ms-h-riga2{
     height: var(--h-riga2);
@@ -313,7 +315,7 @@ span.path{
 .ms-card-top .tasto:hover{
     background-color: #0d6efd;
     color: white;
-    border-radius: 50%;
+    
 
 }
 
@@ -473,13 +475,24 @@ h5.path{
     line-height: 30px;
     vertical-align: middle;
 }
+.ms-disappear0{
+    display: none;
+}
+
 /* responsive 
 ****************************************************** */
 
 
 
 
-@media screen and (max-width: 674px){    
+@media screen and (min-width: 460px){    
+    .ms-disappear0{
+        display: flex;
+    }
+    
+}
+
+@media screen and (max-width: 600px){    
     .ms-disappear1{
         display: none;
     }
@@ -487,7 +500,7 @@ h5.path{
 }
 
 
-@media screen and (max-width: 838px){    
+@media screen and (max-width: 760px){    
     .ms-disappear2{
         display: none;
     }
@@ -500,6 +513,9 @@ h5.path{
     :root{
         /* var(--w-sinistra) */
         --w-sinistra: 130px; 
+        
+        /* var(--h-riga2) */
+        --h-riga2: calc(var(--h-main) - var(--h-riga1)); 
     }
 
     
