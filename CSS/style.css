@@ -175,7 +175,7 @@ header .tasto{
 
 :root{
     /* var(--grigio-hover) */
-    --grigio-hover: rgb(237, 237, 237);
+    --grigio-hover: rgb(247, 247, 247);
 }
 .ms-menu-campana li:hover{
     background-color: var(--grigio-hover);
@@ -349,25 +349,6 @@ span.path:hover{
 
 }
 
-.ms-card-top .tasto{
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
-    margin-right: 30px;
-    border:1px solid #0d6efd;
-    color: #0d6efd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.ms-card-top .tasto:hover{
-    background-color: #0d6efd;
-    color: white;
-    
-
-}
-
 
 
 .ms-card-bottom{
@@ -396,6 +377,43 @@ main li{
     border-bottom: 1px solid var(--color-grigio);
     min-height: 40px;
 }
+
+.ms-prox-class .ms-card-top .tasto{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 30px;
+    border:1px solid #0d6efd;
+    color: #0d6efd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.ms-prox-class .ms-card-top .tasto:hover{
+    background-color: #0d6efd;
+    color: white;
+    
+
+}
+
+/* .ms-prox-class .ms-card-top .tasto:hover.ms-add-class{
+    display: none; 
+}
+
+.ms-add-class{
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    
+    z-index: 11500;
+    height: 100vh;
+    width: 400px;
+    background-color: brown;
+
+} */
 
 .ms-prox-class li:hover{
     background-color: var(--grigio-hover);
