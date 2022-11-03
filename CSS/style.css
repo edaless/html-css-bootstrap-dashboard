@@ -1,3 +1,17 @@
+/* roboto */
+/* 
+
+font-family: 'Roboto', sans-serif;
+
+*/
+
+
+
+
+
+
+
+
 *{
     margin:0;
     padding:0;
@@ -9,6 +23,11 @@
     display: none;
 }
 
+
+body{
+    
+    font-family: 'Roboto', sans-serif;
+}
 
 
 :root{
@@ -245,11 +264,16 @@ main{
     
 }
 
+
+
+
 #destra{
     display: flex;
     flex-wrap: wrap;
     height: 100%;
     width: calc(100% - var(--w-sinistra));
+    height: var(--h-main);
+    overflow-y: scroll;
 
     background-color: #f8f9fa;
 }
@@ -278,6 +302,7 @@ span.path{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     background-color: rgba(0, 0, 0, 0.45);
 }
 
@@ -314,12 +339,6 @@ span.path:hover{
 
 
 
-
-.ms-scroll{
-    overflow-y: scroll;
-
-}
-
 .ms-card{
     margin: 10px 0;
     width: 95%;
@@ -332,28 +351,28 @@ span.path:hover{
 
 :root{
     /* var(--color-grigio) */
-    --color-grigio: rgb(159, 159, 159); 
+    --color-grigio: #a5a5a5ab; 
 }
 .ms-card-top{
     border: 1px solid var(--color-grigio);
-    border-radius: 10px 10px 0px 0px;
-    height: 50px;
+    border-radius: 5px 5px 0px 0px;
+    height: 70px;
     
     border-bottom: 0;
+    display: flex;
+    align-items: flex-start;
+
     
+    padding-left: 20px;
+    padding-top: 10px;
+
 
 }
-.ms-card-top h4{
-    margin-left: 10px;
-    
-
-}
-
 
 
 .ms-card-bottom{
     border: 1px solid var(--color-grigio);
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 5px 5px;
     background-color: white;
 
 }
@@ -365,7 +384,7 @@ span.path:hover{
 }
 
 .ms-card ul{
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 li{
@@ -375,20 +394,22 @@ li{
 }
 main li{    
     border-bottom: 1px solid var(--color-grigio);
-    min-height: 40px;
+    min-height: 55px;
+    padding: 0 10px;
 }
 
+
 .ms-prox-class .ms-card-top .tasto{
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
     margin-right: 30px;
-    border:1px solid #0d6efd;
+    border: 1px solid #0d6efd;
     color: #0d6efd;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    font-size: 23px;
 
 }
 .ms-prox-class .ms-card-top .tasto:hover{
@@ -398,22 +419,7 @@ main li{
 
 }
 
-/* .ms-prox-class .ms-card-top .tasto:hover.ms-add-class{
-    display: none; 
-}
 
-.ms-add-class{
-    position: absolute;
-    top: 0;
-    right: 0;
-    
-    
-    z-index: 11500;
-    height: 100vh;
-    width: 400px;
-    background-color: brown;
-
-} */
 
 .ms-prox-class li:hover{
     background-color: var(--grigio-hover);
@@ -427,23 +433,18 @@ main li{
 
 
 .ms-card li:last-child{
-    
     border: 0;
 }
 
-/*  */
+
 .ms-dettagli{
     width: 400px;
     display: flex;
     justify-content: flex-end;
-    /* overflow-x: hidden; */
-    
-    
 }
 
 .ms-dettaglio{
     width: 90px;
-    /* margin-left: 50px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -540,6 +541,15 @@ main li{
 
 
 
+.ms-colonna1{
+    display: flex;
+    flex-grow: 1;
+}
+
+.ms-colonna2{
+    display: flex;
+    flex-grow: 7;
+}
 .ms-colonna2 ul{
     border: 1px solid var(--color-grigio);
     border-radius: 5px;
@@ -548,8 +558,7 @@ main li{
     margin: 10px 0;
 }
 .ms-colonna2 li{
-    font-size: 0.8em;
-    font-weight: 600;
+    /* font-size: 0.8em; */
     padding: 0 10px;
     border-bottom: 1px solid var(--color-grigio);
     
@@ -583,7 +592,7 @@ h5.path{
 
 
 
-@media screen and (min-width: 460px){    
+@media screen and (min-width: 600px){    
     .ms-disappear0{
         display: flex;
         align-items: center;
@@ -626,13 +635,6 @@ h5.path{
     .big{
         display: flex;
         
-    }
-
-    
-
-    .ms-h-riga2>*{
-        height: var(--h-riga2);
-        overflow-y: scroll;
     }
 
     
